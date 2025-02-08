@@ -1,0 +1,377 @@
+{
+	"name": "APT41 DUST (C0040)",
+	"versions": {
+		"attack": "16",
+		"navigator": "5.1.0",
+		"layer": "4.5"
+	},
+	"domain": "enterprise-attack",
+	"description": "Enterprise techniques used by APT41 DUST, ATT&CK campaign C0040 (v1.0)",
+	"filters": {
+		"platforms": [
+			"Windows",
+			"Linux",
+			"macOS",
+			"Network",
+			"PRE",
+			"Containers",
+			"IaaS",
+			"SaaS",
+			"Office Suite",
+			"Identity Provider"
+		]
+	},
+	"sorting": 3,
+	"layout": {
+		"layout": "side",
+		"aggregateFunction": "average",
+		"showID": false,
+		"showName": true,
+		"showAggregateScores": false,
+		"countUnscored": false,
+		"expandedSubtechniques": "none"
+	},
+	"hideDisabled": false,
+	"techniques": [
+		{
+			"techniqueID": "T1583.007",
+			"tactic": "resource-development",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) used infrastructure hosted behind Cloudflare or utilized Cloudflare Workers for command and control.(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1071.001",
+			"tactic": "command-and-control",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) used HTTPS for command and control.(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1560.001",
+			"tactic": "collection",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) used `rar` to compress data downloaded from internal Oracle databases prior to exfiltration.(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1119",
+			"tactic": "collection",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) used tools such as SQLULDR2 and PINEGROVE to gather local system and database information.(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1586.003",
+			"tactic": "resource-development",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) used compromised Google Workspace accounts for command and control.(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543.003",
+			"tactic": "persistence",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) used Windows Services with names such as `Windows Defend` for persistence of [DUSTPAN](https://attack.mitre.org/software/S1158).(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543.003",
+			"tactic": "privilege-escalation",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) used Windows Services with names such as `Windows Defend` for persistence of [DUSTPAN](https://attack.mitre.org/software/S1158).(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1213",
+			"tactic": "collection",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) collected data from victim Oracle databases using SQLULDR2.(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1074.001",
+			"tactic": "collection",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) involved exporting data from Oracle databases to local CSV files prior to exfiltration.(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1573.002",
+			"tactic": "command-and-control",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) used HTTPS for command and control.(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1567.002",
+			"tactic": "exfiltration",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) exfiltrated collected information to OneDrive.(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.001",
+			"tactic": "persistence",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) involved the use of DLL search order hijacking to execute [DUSTTRAP](https://attack.mitre.org/software/S1159).(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.001",
+			"tactic": "privilege-escalation",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) involved the use of DLL search order hijacking to execute [DUSTTRAP](https://attack.mitre.org/software/S1159).(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.001",
+			"tactic": "defense-evasion",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) involved the use of DLL search order hijacking to execute [DUSTTRAP](https://attack.mitre.org/software/S1159).(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.002",
+			"tactic": "persistence",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) used DLL side-loading to execute [DUSTTRAP](https://attack.mitre.org/software/S1159) via an AhnLab uninstaller.(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.002",
+			"tactic": "privilege-escalation",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) used DLL side-loading to execute [DUSTTRAP](https://attack.mitre.org/software/S1159) via an AhnLab uninstaller.(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.002",
+			"tactic": "defense-evasion",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) used DLL side-loading to execute [DUSTTRAP](https://attack.mitre.org/software/S1159) via an AhnLab uninstaller.(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1070.004",
+			"tactic": "defense-evasion",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) deleted various artifacts from victim systems following use.(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1105",
+			"tactic": "command-and-control",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) involved execution of `certutil.exe` via web shell to download the [DUSTPAN](https://attack.mitre.org/software/S1158) dropper.(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1036.004",
+			"tactic": "defense-evasion",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) disguised [DUSTPAN](https://attack.mitre.org/software/S1158) as a legitimate Windows binary such as `w3wp.exe` or `conn.exe`.(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1027.013",
+			"tactic": "defense-evasion",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) used encrypted payloads decrypted and executed in memory.(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1588.003",
+			"tactic": "resource-development",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) used stolen code signing certificates to sign [DUSTTRAP](https://attack.mitre.org/software/S1159) malware and components.(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1596.005",
+			"tactic": "reconnaissance",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) used internet scan data for target development.(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1593.002",
+			"tactic": "reconnaissance",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) involved use of search engines to research victim servers.(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1594",
+			"tactic": "reconnaissance",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) involved access of external victim websites for target development.(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1505.003",
+			"tactic": "persistence",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) involved use of web shells such as ANTSWORD and BLUEBEAM for persistence.(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1553.002",
+			"tactic": "defense-evasion",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) used stolen code signing certificates for [DUSTTRAP](https://attack.mitre.org/software/S1159) malware and subsequent payloads.(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1569.002",
+			"tactic": "execution",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) used Windows services to execute [DUSTPAN](https://attack.mitre.org/software/S1158).(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1102",
+			"tactic": "command-and-control",
+			"score": 2,
+			"color": "",
+			"comment": "[APT41 DUST](https://attack.mitre.org/campaigns/C0040) used compromised Google Workspace accounts for command and control.(Citation: Google Cloud APT41 2024)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		}
+	],
+	"gradient": {
+		"colors": [
+			"#ffffff00",
+			"#ff6666ff"
+		],
+		"minValue": 0,
+		"maxValue": 5
+	},
+	"legendItems": [
+		{
+			"color": "#66b1ff",
+			"label": "used by APT41 DUST"
+		}
+	],
+	"metadata": [],
+	"links": [],
+	"showTacticRowBackground": false,
+	"tacticRowBackground": "#dddddd",
+	"selectTechniquesAcrossTactics": true,
+	"selectSubtechniquesWithParent": false,
+	"selectVisibleTechniques": false
+}

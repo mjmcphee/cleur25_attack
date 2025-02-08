@@ -1,0 +1,443 @@
+{
+	"name": "HAFNIUM (G0125)",
+	"versions": {
+		"attack": "16",
+		"navigator": "5.1.0",
+		"layer": "4.5"
+	},
+	"domain": "enterprise-attack",
+	"description": "Enterprise techniques used by HAFNIUM, ATT&CK group G0125 (v2.0)",
+	"filters": {
+		"platforms": [
+			"Windows",
+			"Linux",
+			"macOS",
+			"Network",
+			"PRE",
+			"Containers",
+			"IaaS",
+			"SaaS",
+			"Office Suite",
+			"Identity Provider"
+		]
+	},
+	"sorting": 3,
+	"layout": {
+		"layout": "side",
+		"aggregateFunction": "average",
+		"showID": false,
+		"showName": true,
+		"showAggregateScores": false,
+		"countUnscored": false,
+		"expandedSubtechniques": "none"
+	},
+	"hideDisabled": false,
+	"techniques": [
+		{
+			"techniqueID": "T1098",
+			"tactic": "persistence",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has granted privileges to domain accounts.(Citation: Volexity Exchange Marauder March 2021)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1098",
+			"tactic": "privilege-escalation",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has granted privileges to domain accounts.(Citation: Volexity Exchange Marauder March 2021)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1583.003",
+			"tactic": "resource-development",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has operated from leased virtual private servers (VPS) in the United States.(Citation: Microsoft HAFNIUM March 2020)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1583.006",
+			"tactic": "resource-development",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has acquired web services for use in C2 and exfiltration.(Citation: Microsoft HAFNIUM March 2020)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1071.001",
+			"tactic": "command-and-control",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has used open-source C2 frameworks, including Covenant.(Citation: Microsoft HAFNIUM March 2020)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1560.001",
+			"tactic": "collection",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has used 7-Zip and WinRAR to compress stolen files for exfiltration.(Citation: Microsoft HAFNIUM March 2020)(Citation: Volexity Exchange Marauder March 2021)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059.001",
+			"tactic": "execution",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has used the Exchange Power Shell module Set-OabVirtualDirectoryPowerShell to export mailbox data.(Citation: Microsoft HAFNIUM March 2020)(Citation: Volexity Exchange Marauder March 2021)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059.003",
+			"tactic": "execution",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has used `cmd.exe` to execute commands on the victim's machine.(Citation: Rapid7 HAFNIUM Mar 2021)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1136.002",
+			"tactic": "persistence",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has created domain accounts.(Citation: Volexity Exchange Marauder March 2021)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1132.001",
+			"tactic": "command-and-control",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has used ASCII encoding for C2 traffic.(Citation: Microsoft HAFNIUM March 2020)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1005",
+			"tactic": "collection",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has collected data and files from a compromised machine.(Citation: Rapid7 HAFNIUM Mar 2021)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1114.002",
+			"tactic": "collection",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has used web shells to export mailbox data.(Citation: Microsoft HAFNIUM March 2020)(Citation: Volexity Exchange Marauder March 2021)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1567.002",
+			"tactic": "exfiltration",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has exfiltrated data to file sharing sites, including MEGA.(Citation: Microsoft HAFNIUM March 2020)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1190",
+			"tactic": "initial-access",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has exploited CVE-2021-44228 in Log4j and CVE-2021-26855, CVE-2021-26857, CVE-2021-26858, and CVE-2021-27065  to compromise on-premises versions of Microsoft Exchange Server.(Citation: Microsoft HAFNIUM March 2020)(Citation: Volexity Exchange Marauder March 2021)(Citation: FireEye Exchange Zero Days March 2021)(Citation: Tarrask scheduled task)(Citation: Microsoft Log4j Vulnerability Exploitation December 2021)   ",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1083",
+			"tactic": "discovery",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has searched file contents on a compromised host.(Citation: Rapid7 HAFNIUM Mar 2021)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1592.004",
+			"tactic": "reconnaissance",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has interacted with Office 365 tenants to gather details regarding target's environments.(Citation: Microsoft HAFNIUM March 2020)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1589.002",
+			"tactic": "reconnaissance",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has collected e-mail addresses for users they intended to target.(Citation: Volexity Exchange Marauder March 2021)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1590",
+			"tactic": "reconnaissance",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) gathered the fully qualified domain names (FQDNs) for targeted Exchange servers in the victim's environment.(Citation: Volexity Exchange Marauder March 2021)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1590.005",
+			"tactic": "reconnaissance",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has obtained IP addresses for publicly-accessible Exchange servers.(Citation: Volexity Exchange Marauder March 2021)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1564.001",
+			"tactic": "defense-evasion",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has hidden files on a compromised host.(Citation: Rapid7 HAFNIUM Mar 2021)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1105",
+			"tactic": "command-and-control",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has downloaded malware and tools--including Nishang and PowerCat--onto a compromised host.(Citation: Microsoft HAFNIUM March 2020)(Citation: Rapid7 HAFNIUM Mar 2021) ",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1095",
+			"tactic": "command-and-control",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has used TCP for C2.(Citation: Microsoft HAFNIUM March 2020)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003.001",
+			"tactic": "credential-access",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has used procdump to dump the LSASS process memory.(Citation: Microsoft HAFNIUM March 2020)(Citation: Volexity Exchange Marauder March 2021)(Citation: Rapid7 HAFNIUM Mar 2021)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003.003",
+			"tactic": "credential-access",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has stolen copies of the Active Directory database (NTDS.DIT).(Citation: Volexity Exchange Marauder March 2021)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1057",
+			"tactic": "discovery",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has used `tasklist` to enumerate processes.(Citation: Rapid7 HAFNIUM Mar 2021)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1018",
+			"tactic": "discovery",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has enumerated domain controllers using `net group \"Domain computers\"` and `nltest /dclist`.(Citation: Rapid7 HAFNIUM Mar 2021)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1505.003",
+			"tactic": "persistence",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has deployed multiple web shells on compromised servers including SIMPLESEESHARP, SPORTSBALL, [China Chopper](https://attack.mitre.org/software/S0020), and [ASPXSpy](https://attack.mitre.org/software/S0073).(Citation: Microsoft HAFNIUM March 2020)(Citation: Volexity Exchange Marauder March 2021)(Citation: FireEye Exchange Zero Days March 2021)(Citation: Tarrask scheduled task)(Citation: Rapid7 HAFNIUM Mar 2021)   ",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218.011",
+			"tactic": "defense-evasion",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has used rundll32 to load malicious DLLs.(Citation: Volexity Exchange Marauder March 2021)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1016",
+			"tactic": "discovery",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has collected IP information via IPInfo.(Citation: Rapid7 HAFNIUM Mar 2021)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1016.001",
+			"tactic": "discovery",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has checked for network connectivity from a compromised host using `ping`, including attempts to contact `google[.]com`.(Citation: Rapid7 HAFNIUM Mar 2021)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1033",
+			"tactic": "discovery",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has used `whoami` to gather user information.(Citation: Rapid7 HAFNIUM Mar 2021)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.003",
+			"tactic": "defense-evasion",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has used the NT AUTHORITY\\SYSTEM account to create files on Exchange servers.(Citation: FireEye Exchange Zero Days March 2021)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.003",
+			"tactic": "persistence",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has used the NT AUTHORITY\\SYSTEM account to create files on Exchange servers.(Citation: FireEye Exchange Zero Days March 2021)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.003",
+			"tactic": "privilege-escalation",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has used the NT AUTHORITY\\SYSTEM account to create files on Exchange servers.(Citation: FireEye Exchange Zero Days March 2021)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.003",
+			"tactic": "initial-access",
+			"score": 3,
+			"color": "",
+			"comment": "[HAFNIUM](https://attack.mitre.org/groups/G0125) has used the NT AUTHORITY\\SYSTEM account to create files on Exchange servers.(Citation: FireEye Exchange Zero Days March 2021)",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		}
+	],
+	"gradient": {
+		"colors": [
+			"#ffffff00",
+			"#ff6666ff"
+		],
+		"minValue": 0,
+		"maxValue": 5
+	},
+	"legendItems": [
+		{
+			"color": "#66b1ff",
+			"label": "used by HAFNIUM"
+		}
+	],
+	"metadata": [],
+	"links": [],
+	"showTacticRowBackground": false,
+	"tacticRowBackground": "#dddddd",
+	"selectTechniquesAcrossTactics": true,
+	"selectSubtechniquesWithParent": false,
+	"selectVisibleTechniques": false
+}
